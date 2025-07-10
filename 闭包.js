@@ -3,13 +3,13 @@ function outer() {
 
   //普通函数
   const normalFn = function () {
-    console.log(x) //形成作业
+    console.log(x) //闭包了
     console.log(this) //自己的this
   }
 
   //箭头函数
   const arrowFn = () => {
-    console.log(x) //同样形成闭包
+    console.log(x)
     console.log(this) //继承自outer的this
   }
 
